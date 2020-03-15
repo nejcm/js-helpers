@@ -31,7 +31,6 @@
 
 [![All Contributors][all-contributors-badge]](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
-[![Join the community on Spectrum][spectrum-badge]][spectrum]
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
@@ -44,7 +43,6 @@
 
 - [Getting started](#-getting-started)
 - [Installation](#installation)
-- [Examples](#examples)
 - [Docs](#docs)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
@@ -75,13 +73,6 @@ Some utility functions and helper methods that I use in my projects.
 $ npm install --save @nejcm/js-helpers
 ```
 
-## Examples
-
-```js
-import  { get } from '@nejcm/js-helpers';
-
-const value = get(object, "deep.nested.value");
-```
 
 ## Docs
 
