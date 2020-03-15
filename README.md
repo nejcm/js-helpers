@@ -161,13 +161,13 @@ Reach out to us at one of the following places:
 [all-contributors-badge]: https://img.shields.io/badge/all_contributors-1-orange.svg
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [bugs]: https://github.com/nejcm/js-helpers/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
-[build-badge]: https://img.shields.io/travis/nejcm/js-helpers.svg
-[build]: https://travis-ci.org/nejcm/js-helpers
+[build-badge]: https://img.shields.io/travis/com/nejcm/js-helpers.svg
+[build]: https://travis-ci.com/nejcm/js-helpers
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
 [coc]: https://github.com/nejcm/js-helpers/blob/master/CODE_OF_CONDUCT.md
 [coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/js-helpers.svg
 [coverage]: https://codecov.io/github/nejcm/js-helpers
-[docs]: https://
+[docs]: https://nejcm.github.io/js-helpers/
 [downloads-badge]: https://img.shields.io/npm/dm/@nejcm/js-helpers.svg
 [email]: nmursi2@gmail.com
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key

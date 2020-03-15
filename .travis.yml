@@ -35,5 +35,15 @@ jobs:
       after_success:
         - echo "Deploying to npm ..."
         - npm run semantic-release
+
+    - stage: deploy
+      if: branch = master
+      node_js: lts/*
+      script:
         - echo "Deploying to github pages ..."
-        - npm run storybook:deploy
+        - npm run storybook:build
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
