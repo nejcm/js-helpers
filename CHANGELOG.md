@@ -1,17 +1,3 @@
-# 1.0.0 (2020-03-15)
-
-
-### Bug Fixes
-
-* **tests:** Fixed tests ([20a3bea](https://github.com/nejcm/js-helpers/commit/20a3beabbfbbcb98faa8975f7cde4338f7d294f4))
-
-# 1.0.0 (2020-03-14)
-
-
-### Bug Fixes
-
-* **release:** fixed the release ([6779785](https://github.com/nejcm/js-library-boilerplate/commit/6779785a9b264429b64569c967b657f9dbf7ead2))
-
 # CHANGELOG
 
 The changelog is automatically updated using

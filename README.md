@@ -130,9 +130,9 @@ instead of filing an issue on GitHub.
         <sub><b>Nejc Muršič</b></sub>
       </a>
       <br />
-      <a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Code">💻</a> 
-      <a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Documentation">📖</a> 
-      <a href="#infra" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Tests">⚠️</a>
+      <a href="https://github.com/nejcm/js-helpers/commits?author=nejcm" title="Code">💻</a> 
+      <a href="https://github.com/nejcm/js-helpers/commits?author=nejcm" title="Documentation">📖</a> 
+      <a href="#infra" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nejcm/js-helpers/commits?author=nejcm" title="Tests">⚠️</a>
     </td>
   </tr>
 </table>
