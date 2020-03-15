@@ -1,0 +1,110 @@
+import * as helpers from '../lib/object';
+
+describe('object', () => {
+  it('should return object with filtered empty values', () => {
+    const obj = {
+      k1: 1,
+      k2: null,
+      k3: undefined,
+    };
+    expect(helpers.filterEmpty(obj)).toEqual({k1: 1});
+  });
+
+  it('should return object value', () => {
+    const obj = {
+      level1: {
+        level2: {
+          value: 1,
+        },
+      },
+    };
+    expect(helpers.get(obj, 'level1.level2.value')).toEqual(
+      obj.level1.level2.value,
+    );
+  });
+
+  it('should return object value from array', () => {
+    const obj = {
+      level1: {
+        level2: {
+          value: 1,
+        },
+      },
+    };
+    expect(helpers.get(obj, ['level1', 'level2', 'value'])).toEqual(
+      obj.level1.level2.value,
+    );
+  });
+
+  it('should return object values from array of keys', () => {
+    const obj = {
+      level1: {
+        level2: 1,
+      },
+      k1: 10,
+      k2: 20,
+    };
+    expect(helpers.getMultiple(obj, ['level1.level2', 'k2'])).toEqual([1, 20]);
+  });
+
+  it('should return empty array for empty array of keys', () => {
+    const obj = {
+      level1: {
+        level2: 1,
+      },
+      k1: 10,
+    };
+    expect(helpers.getMultiple(obj)).toEqual([]);
+  });
+
+  it('should return undefined for missing key', () => {
+    const obj = {
+      level1: {},
+    };
+    expect(helpers.get(obj, 'level1_')).toBeUndefined();
+  });
+
+  it('should flattern an object', () => {
+    const obj = {
+      k1: 1,
+      k2: {
+        k3: 3,
+      },
+    };
+    expect(helpers.flatten(obj)).toEqual({
+      k1: 1,
+      'k2.k3': 3,
+    });
+  });
+
+  it('should flattern an object with prefix', () => {
+    const obj = {
+      k1: 1,
+      k2: {
+        k3: 3,
+      },
+    };
+    expect(helpers.flatten(obj, 'a')).toEqual({
+      'a.k1': 1,
+      'a.k2.k3': 3,
+    });
+  });
+
+  it('should flattern an empty object', () => {
+    expect(helpers.flatten(null)).toEqual({});
+  });
+
+  it('should return json from object', () => {
+    const obj = {
+      k1: 1,
+      k2: {
+        k3: 3,
+      },
+    };
+    expect(helpers.toJson(obj)).toEqual(JSON.stringify(obj));
+  });
+
+  it('should return undefined', () => {
+    expect(helpers.toJson(null)).toBeUndefined();
+  });
+});
