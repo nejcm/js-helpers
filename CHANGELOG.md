@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/nejcm/js-helpers/compare/v1.0.1...v1.0.2) (2020-03-15)
+
+
+### Bug Fixes
+
+* **travis:** fixed travis deploy dir ([27774e8](https://github.com/nejcm/js-helpers/commit/27774e8cf712137f82051b231f44bcc3faf3120a))
+
 ## [1.0.1](https://github.com/nejcm/js-helpers/compare/v1.0.0...v1.0.1) (2020-03-15)
 
 
