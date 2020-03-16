@@ -76,7 +76,7 @@ $ npm install --save @nejcm/js-helpers
 
 ## Docs
 
-> [**Docs**]([docs])
+> [**Docs**][docs-link]
 
 
 ## Issues
@@ -158,7 +158,7 @@ Reach out to us at one of the following places:
 [coc]: https://github.com/nejcm/js-helpers/blob/master/CODE_OF_CONDUCT.md
 [coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/js-helpers.svg
 [coverage]: https://codecov.io/github/nejcm/js-helpers
-[docs]: https://nejcm.github.io/js-helpers/
+[docs-link]: https://nejcm.github.io/js-helpers/
 [downloads-badge]: https://img.shields.io/npm/dm/@nejcm/js-helpers.svg
 [email]: nmursi2@gmail.com
 [emojis]: https://github.com/all-contributors/all-contributors#emoji-key
