@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/nejcm/js-helpers/compare/v1.0.2...v1.1.0) (2020-03-17)
+
+
+### Features
+
+* added new measure2Css helper ([37ae163](https://github.com/nejcm/js-helpers/commit/37ae163056e2ce9dbe8937aca03cbaa5db589260))
+
 ## [1.0.2](https://github.com/nejcm/js-helpers/compare/v1.0.1...v1.0.2) (2020-03-15)
 
 
