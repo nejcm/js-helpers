@@ -1,3 +1,14 @@
+## [1.1.1](https://github.com/nejcm/js-helpers/compare/v1.1.0...v1.1.1) (2020-03-19)
+
+
+### Bug Fixes
+
+* deps ([1edd3ca](https://github.com/nejcm/js-helpers/commit/1edd3ca2e29f1456767bb931b9e02f38e33d4e39))
+* deps ([a3ebb9c](https://github.com/nejcm/js-helpers/commit/a3ebb9c16d2767d580df5729d160168bd97bbfb2))
+* fixed lint error ([30c478b](https://github.com/nejcm/js-helpers/commit/30c478bfdf1e8e4e20cf9c45e5d5db60cd4383a2))
+* missing dep ([c403245](https://github.com/nejcm/js-helpers/commit/c4032453908b342352d4939430f411cb417711c1))
+* missing dep ([57961a2](https://github.com/nejcm/js-helpers/commit/57961a29d212f7d03e9b2467f495244c648284d9))
+
 # [1.1.0](https://github.com/nejcm/js-helpers/compare/v1.0.2...v1.1.0) (2020-03-17)
 
 
