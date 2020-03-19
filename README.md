@@ -74,9 +74,9 @@ $ npm install --save @nejcm/js-helpers
 ```
 
 
-## Docs
+## Docs & Examples
 
-> [**Docs**][docs-link]
+> [**Docs & Examples**][docs-link]
 
 
 ## Issues
