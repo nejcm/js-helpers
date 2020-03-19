@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "react-app", "kentcdodds"],
+  "extends": ["eslint:recommended", "kentcdodds"],
   "env": {
     "browser": true,
     "es6": true,
