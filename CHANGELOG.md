@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/nejcm/js-helpers/compare/v1.1.1...v1.1.2) (2020-03-19)
+
+
+### Bug Fixes
+
+* missing dep ([94e7e44](https://github.com/nejcm/js-helpers/commit/94e7e443db735879b2a8ad183b8cf82fd0cc421d))
+
 ## [1.1.1](https://github.com/nejcm/js-helpers/compare/v1.1.0...v1.1.1) (2020-03-19)
 
 
