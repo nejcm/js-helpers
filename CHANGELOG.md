@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/nejcm/js-helpers/compare/v1.1.3...v1.2.0) (2020-03-22)
+
+
+### Bug Fixes
+
+* fixed travis cleanup issue ([d2d247c](https://github.com/nejcm/js-helpers/commit/d2d247c5d6de22a96ed4587ddee8fc686fe594ea))
+
+
+### Features
+
+* added style helpers ([6c80c94](https://github.com/nejcm/js-helpers/commit/6c80c94c62d868dacd1acb637ca52ee7156df9ff))
+
 ## [1.1.3](https://github.com/nejcm/js-helpers/compare/v1.1.2...v1.1.3) (2020-03-22)
 
 
