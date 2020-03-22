@@ -55,7 +55,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@babel/runtime": "^7.9.2"
+    "@babel/runtime": "^7.9.2",
+    "object-to-formdata": "^3.0.6"
   },
   "devDependencies": {
     "@babel/helpers": "^7.9.2",
@@ -69,7 +70,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "@semantic-release/npm": "^7.0.5",
     "@storybook/addon-actions": "^5.3.17",
-    "storybook-addon-jsx": "^7.1.15",
+    "@storybook/addon-docs": "^5.3.17",
     "@storybook/addon-knobs": "^5.3.17",
     "@storybook/addon-links": "^5.3.17",
     "@storybook/addon-notes": "^5.3.17",
@@ -112,9 +113,8 @@
     "jest-watch-typeahead": "0.4.2",
     "lint-staged": "10.0.8",
     "node-sass": "^4.13.1",
-    "object-to-formdata": "^3.0.6",
     "postcss": "^7.0.27",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
