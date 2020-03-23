@@ -41,9 +41,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting started](#-getting-started)
+- [Getting started](#getting-started)
 - [Installation](#installation)
-- [Docs](#docs)
+- [Docs & Examples](#docs--examples)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
   - [💡 Feature Requests](#-feature-requests)
@@ -70,9 +70,16 @@ Some utility functions and helper methods that I use in my projects.
 ## Installation
 
 ```shell
+
 $ npm install --save @nejcm/js-helpers
+
 ```
 
+```jsx
+
+import { get, containsAll } from '@nejcm/js-helpers';
+
+```
 
 ## Docs & Examples
 
