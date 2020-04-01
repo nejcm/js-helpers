@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/nejcm/js-helpers/compare/v1.2.0...v1.3.0) (2020-04-01)
+
+
+### Features
+
+* Added curry function helper ([a6a0770](https://github.com/nejcm/js-helpers/commit/a6a0770c143410544026d0a405fac66f3d448f5e))
+
 # [1.2.0](https://github.com/nejcm/js-helpers/compare/v1.1.3...v1.2.0) (2020-03-22)
 
 
