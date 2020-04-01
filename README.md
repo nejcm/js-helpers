@@ -1,6 +1,4 @@
-<div>
-
-<h1>JS utils</h1>
+# JS utils
 <blockquote>Javascript utilities and helper functions</blockquote>
 <br />
 
@@ -12,10 +10,9 @@
     src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1f6e0.png?192038471"
   />
 </a>
+<br />
+<br />
 
-<br />
-<br />
-</div>
 
 <!-- prettier-ignore-start -->
 [![NPM][npm-badge]][npm-link] 

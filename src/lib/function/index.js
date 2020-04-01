@@ -20,3 +20,21 @@ export const runFunction = (func, ...args) => {
     return func(...args);
   }
 };
+
+/**
+ *  Returns a curried function
+ *
+ * @param {Function} func Function
+ * @returns {Any} Curried function
+ */
+export const curry = (func) => {
+  return function curried(...args) {
+    if (args.length >= func.length) {
+      return func(...args);
+    } else {
+      return (...argsLeft) => {
+        return curried(...args, ...argsLeft);
+      };
+    }
+  };
+};
