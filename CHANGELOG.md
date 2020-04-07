@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/nejcm/js-helpers/compare/v1.3.0...v2.0.0) (2020-04-07)
+
+
+### Features
+
+* removed methods and fixed null checks ([d51922b](https://github.com/nejcm/js-helpers/commit/d51922b2931836fdef81d69be52769a908aca069))
+
+
+### BREAKING CHANGES
+
+* Removed some methods that are included in lodash
+
 # [1.3.0](https://github.com/nejcm/js-helpers/compare/v1.2.0...v1.3.0) (2020-04-01)
 
 
