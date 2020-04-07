@@ -6,9 +6,19 @@ describe('array', () => {
     expect(() => helpers.reorder(array, 0, 1)).toThrow();
   });
 
+  it('should return same value for null or undefined array from reorder', () => {
+    const array = undefined;
+    expect(helpers.reorder(array, 0, 1)).toEqual(array);
+  });
+
   it('should reorder array', () => {
     const array = [10, 20, 30, 40, 50, 60];
     expect(helpers.reorder(array, 0, 4)).toEqual([20, 30, 40, 50, 10, 60]);
+  });
+
+  it('should return same value for null or undefined array from findReverse', () => {
+    const array = undefined;
+    expect(helpers.findReverse(array)).toEqual(array);
   });
 
   it('should find reverse item in array', () => {
@@ -26,6 +36,11 @@ describe('array', () => {
     expect(helpers.findReverse(array, (item) => item > 60)).toBeUndefined();
   });
 
+  it('should return same value for null or undefined array from findIndexReverse', () => {
+    const array = undefined;
+    expect(helpers.findIndexReverse(array)).toEqual(array);
+  });
+
   it('should find reverse item index in array', () => {
     const array = [10, 20, 30, 40, 50, 60];
     expect(helpers.findIndexReverse(array)).toEqual(5);
@@ -41,6 +56,12 @@ describe('array', () => {
     expect(
       helpers.findIndexReverse(array, (item) => item > 60),
     ).toBeUndefined();
+  });
+
+  it('should return same value for null or undefined array from containsAll', () => {
+    const array = undefined;
+    const contains = [10, 40, 50];
+    expect(helpers.containsAll(array, contains)).toEqual(array);
   });
 
   it('should return true for array that contains all elements', () => {
@@ -61,6 +82,12 @@ describe('array', () => {
     expect(helpers.containsAll(array, contains)).toBeFalsy();
   });
 
+  it('should return same value for null or undefined array from containsAny', () => {
+    const array = null;
+    const contains = [10, 70, 80];
+    expect(helpers.containsAny(array, contains)).toEqual(array);
+  });
+
   it('should return true for array that contains any of the elements', () => {
     const array = [10, 20, 30, 40, 50, 60];
     const contains = [10, 70, 80];
@@ -77,6 +104,11 @@ describe('array', () => {
     const array = [10, 20, 30, 40, 50, 60];
     const contains = 25;
     expect(helpers.containsAny(array, contains)).toBeFalsy();
+  });
+
+  it('should return same value for null or undefined array from groupBy', () => {
+    const array = null;
+    expect(helpers.groupBy(array, 'group')).toEqual(array);
   });
 
   it('should return grouped array by value', () => {
@@ -102,13 +134,5 @@ describe('array', () => {
       false: [10, 20],
       true: [30, 40, 50, 60],
     });
-  });
-
-  it('should return chunked array', () => {
-    const array = [10, 20, 30, 40, 50, 60];
-    expect(helpers.chunk(array, 4)).toEqual([
-      [10, 20, 30, 40],
-      [50, 60],
-    ]);
   });
 });

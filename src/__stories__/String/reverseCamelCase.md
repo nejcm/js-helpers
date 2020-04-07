@@ -1,5 +1,5 @@
 
-# camelCase2Word
+# reverseCamelCase
 
 <p>
   Returns a sentence from camel case word and optionally skips abbreviations.
@@ -9,7 +9,7 @@
 
 ```js
 
-import {camelCase2Word} from '@nejcm/js-helpers';
+import {reverseCamelCase} from '@nejcm/js-helpers';
 
 const str = 'helloMike';
 const result = replace(str);  // 'hello Mike'
@@ -21,7 +21,7 @@ const result = replace(str);  // 'hello Mike'
 
 ```js
 
-import {camelCase2Word} from '@nejcm/js-helpers';
+import {reverseCamelCase} from '@nejcm/js-helpers';
 
 const str = 'ABC';
 const result = replace(str, true);  // ABC

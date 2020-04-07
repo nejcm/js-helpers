@@ -1,6 +1,11 @@
 import * as helpers from '../lib/object';
 
 describe('object', () => {
+  it('should return null for null or undefined object', () => {
+    const obj = null;
+    expect(helpers.filterEmpty(obj)).toEqual(null);
+  });
+
   it('should return object with filtered empty values', () => {
     const obj = {
       k1: 1,
@@ -8,32 +13,6 @@ describe('object', () => {
       k3: undefined,
     };
     expect(helpers.filterEmpty(obj)).toEqual({k1: 1});
-  });
-
-  it('should return object value', () => {
-    const obj = {
-      level1: {
-        level2: {
-          value: 1,
-        },
-      },
-    };
-    expect(helpers.get(obj, 'level1.level2.value')).toEqual(
-      obj.level1.level2.value,
-    );
-  });
-
-  it('should return object value from array', () => {
-    const obj = {
-      level1: {
-        level2: {
-          value: 1,
-        },
-      },
-    };
-    expect(helpers.get(obj, ['level1', 'level2', 'value'])).toEqual(
-      obj.level1.level2.value,
-    );
   });
 
   it('should return object values from array of keys', () => {
@@ -55,13 +34,6 @@ describe('object', () => {
       k1: 10,
     };
     expect(helpers.getMultiple(obj)).toEqual([]);
-  });
-
-  it('should return undefined for missing key', () => {
-    const obj = {
-      level1: {},
-    };
-    expect(helpers.get(obj, 'level1_')).toBeUndefined();
   });
 
   it('should flattern an object', () => {

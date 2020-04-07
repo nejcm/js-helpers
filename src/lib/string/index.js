@@ -21,20 +21,6 @@ export const randomPassword = (length = 15) => {
 };
 
 /**
- *  Trim text and add ellipsis at the end if needed
- * @param {String} str String to shorten
- * @param {Integer} max Max length
- * @returns {String} Returned string
- */
-export const ellipsis = (str, max) => {
-  if (!str) {
-    return str;
-  }
-  const len = str.length;
-  return `${str.substr(0, max)}${len > max ? '...' : ''}`;
-};
-
-/**
  *  Replace keys in string with object properties
  * @param {String} str String to replace
  * @param {Object} obj Object with values
@@ -42,7 +28,7 @@ export const ellipsis = (str, max) => {
  */
 export const replace = (str, obj) => {
   if (!str || !obj) {
-    return null;
+    return str;
   }
   return str.replace(/{{(\w+)}}/g, (_, k) => {
     return obj[k];
@@ -55,7 +41,10 @@ export const replace = (str, obj) => {
  * @param {Bool} allowAbbreviations Are abbreviations allowed
  * @returns {String} Converted string
  */
-export const camelCase2Word = (str, allowAbbreviations = false) => {
+export const reverseCamelCase = (str, allowAbbreviations = false) => {
+  if (!str) {
+    return str;
+  }
   return allowAbbreviations
     ? str.replace(/([^.|\s|^A-Z])([A-Z])/g, '$1 $2')
     : str.replace(/([A-Z])/g, ' $1');

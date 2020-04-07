@@ -12,6 +12,9 @@ const isArray = (arr) => {
  * @returns {Array} Reordered array
  */
 export const reorder = (array, index, destination) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   const result = [...array];
   const [removed] = result.splice(index, 1);
@@ -26,6 +29,9 @@ export const reorder = (array, index, destination) => {
  * @returns {Number} Last index
  */
 export const findIndexReverse = (array, predicate) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   for (let i = array.length - 1; i >= 0; --i) {
     const x = array[i];
@@ -42,11 +48,12 @@ export const findIndexReverse = (array, predicate) => {
  * @returns {Any} Last element
  */
 export const findReverse = (array, predicate) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   const index = findIndexReverse(array, predicate);
-  if (index) {
-    return array[index];
-  }
+  return index ? array[index] : index;
 };
 
 /**
@@ -56,6 +63,9 @@ export const findReverse = (array, predicate) => {
  * @returns {Bool} Does it contain all
  */
 export const containsAll = (array, values) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   values = Array.isArray(values) ? values : [values];
   return values.every((val) => array.includes(val));
@@ -68,6 +78,9 @@ export const containsAll = (array, values) => {
  * @returns {Bool} Does it contain any
  */
 export const containsAny = (array, values) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   values = Array.isArray(values) ? values : [values];
   return values.some((val) => array.includes(val));
@@ -80,6 +93,9 @@ export const containsAny = (array, values) => {
  * @returns {Object} Grouped array
  */
 export const groupBy = (array, criteria) => {
+  if (!array) {
+    return array;
+  }
   isArray(array);
   return array.reduce((result, item) => {
     const key =
@@ -87,21 +103,4 @@ export const groupBy = (array, criteria) => {
     (result[key] = result[key] || []).push(item);
     return result;
   }, {});
-};
-
-/**
- * Returns an array with arrays of the given size.
- * @param {Array} array Array to split
- * @param {Integer} size Size of every group
- * @returns {Array} Chunked array
- */
-export const chunk = (array, size) => {
-  isArray(array);
-  const results = [];
-  const items = [...array];
-  const s = size > 0 ? size : 1;
-  while (items.length) {
-    results.push(items.splice(0, s));
-  }
-  return results;
 };

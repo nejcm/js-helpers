@@ -1,24 +1,22 @@
-import { number, text, withKnobs } from '@storybook/addon-knobs';
+import { number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { module } from 'react';
-import { ellipsis } from '../../lib/string';
-import markdown from './ellipsis.md';
+import { randomPassword } from '../../lib/string';
+import markdown from './randomPassword.md';
 
 const story = () => {
-  const str = text('String', 'Hello world!');
-  const len = number('Length', 5);
+  const len = number('Length', 15);
 
   return (
     <div>
-      <div>String: {str}</div>
       <div>Length: {len}</div>
       <p>
-        Result: <strong>{ellipsis(str, len)}</strong>
+        Result: <strong>{randomPassword(len)}</strong>
       </p>
     </div>
   );
 };
 
-storiesOf('String|ellipsis', module)
+storiesOf('String|randomPassword', module)
   .addDecorator(withKnobs)
   .add('Usage', story, { notes: {markdown} });

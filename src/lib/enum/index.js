@@ -1,4 +1,4 @@
-import {get as _get} from '../object';
+import {get} from 'lodash';
 
 class Enum {
   constructor(obj) {
@@ -13,7 +13,7 @@ class Enum {
   };
 
   getValue = (key, ...rest) => {
-    return _get(this, [key, ...rest]);
+    return get(this, [key, ...rest]);
   };
 
   all = (...exclude) => {

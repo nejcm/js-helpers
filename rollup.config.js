@@ -4,9 +4,11 @@ import filesize from 'rollup-plugin-filesize';
 import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
 import { uglify } from 'rollup-plugin-uglify';
+// eslint-disable-next-line import/extensions
 import pkg from './package.json';
 
 const external = (id) => !id.startsWith('.') && !id.startsWith('/');
+const externals =  ['react', 'react-dom', 'prop-types', 'lodash'];
 
 const babelConfig = (
   {useESModules, targets} = {
@@ -38,15 +40,16 @@ const babelConfig = (
 
 const umdConfig = ({minify} = {}) => ({
   input: pkg.source,
-  external: ['react', 'react-dom', 'prop-types'],
+  external: externals,
   output: {
     name: pkg.name,
-    file: minify ? pkg["umd:main"].replace('.js', '.min.js') : pkg["umd:main"],
+    file: minify ? pkg['umd:main'].replace('.js', '.min.js') : pkg['umd:main'],
     format: 'umd',
     globals: {
       react: 'React',
       'react-dom': 'ReactDOM',
       'prop-types': 'PropTypes',
+      lodash: 'lodash'
     },
   },
   plugins: [
