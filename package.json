@@ -56,7 +56,8 @@
   "peerDependencies": {},
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "object-to-formdata": "^3.0.6"
+    "object-to-formdata": "^3.0.6",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",
@@ -113,7 +114,6 @@
     "jest-resolve": "25.3.0",
     "jest-watch-typeahead": "0.5.0",
     "lint-staged": "10.1.6",
-    "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "postcss": "^7.0.27",
     "prettier": "^2.0.4",
