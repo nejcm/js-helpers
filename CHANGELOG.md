@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/nejcm/js-helpers/compare/v2.0.0...v2.0.1) (2020-04-19)
+
+
+### Bug Fixes
+
+* fixed travis build issue ([9d9bc1e](https://github.com/nejcm/js-helpers/commit/9d9bc1e3310288ceac6c9d5f9ba75b6cba909116))
+
 # [2.0.0](https://github.com/nejcm/js-helpers/compare/v1.3.0...v2.0.0) (2020-04-07)
 
 
