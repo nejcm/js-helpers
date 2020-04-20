@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/nejcm/js-helpers/compare/v2.0.3...v2.0.4) (2020-04-20)
+
+
+### Bug Fixes
+
+* replaced lodash because of bundle size ([d724710](https://github.com/nejcm/js-helpers/commit/d724710eb7dad638cf5c359acf81900ad94a52e3))
+
 ## [2.0.3](https://github.com/nejcm/js-helpers/compare/v2.0.2...v2.0.3) (2020-04-20)
 
 
