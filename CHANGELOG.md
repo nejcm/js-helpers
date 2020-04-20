@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/nejcm/js-helpers/compare/v2.0.4...v2.1.0) (2020-04-20)
+
+
+### Features
+
+* added isDefined helper ([7afd2d7](https://github.com/nejcm/js-helpers/commit/7afd2d7e88190985f8926c29c74c0b7616510a6c))
+
 ## [2.0.4](https://github.com/nejcm/js-helpers/compare/v2.0.3...v2.0.4) (2020-04-20)
 
 
