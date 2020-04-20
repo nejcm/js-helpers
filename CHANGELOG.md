@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/nejcm/js-helpers/compare/v2.0.2...v2.0.3) (2020-04-20)
+
+
+### Bug Fixes
+
+* fixed lodash dependency, replaced rollup config with kcd-scripts ([40a1fe0](https://github.com/nejcm/js-helpers/commit/40a1fe022a1126e4062b3b94f40d319b159a7393))
+
 ## [2.0.2](https://github.com/nejcm/js-helpers/compare/v2.0.1...v2.0.2) (2020-04-19)
 
 
