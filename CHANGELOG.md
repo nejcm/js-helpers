@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/nejcm/js-helpers/compare/v2.0.1...v2.0.2) (2020-04-19)
+
+
+### Bug Fixes
+
+* fixed lodash dependency ([6429955](https://github.com/nejcm/js-helpers/commit/6429955607a11d91ce8fc1b085a537bbe754e601))
+
 ## [2.0.1](https://github.com/nejcm/js-helpers/compare/v2.0.0...v2.0.1) (2020-04-19)
 
 
