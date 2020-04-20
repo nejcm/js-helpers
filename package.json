@@ -4,10 +4,10 @@
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "Javascript utilities and helper functions",
   "source": "src/index.js",
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/inded.esm.js",
-  "typings": "typings/index.d.ts",
+  "main": "dist/@nejcm/js-helpers.cjs.js",
+  "umd:main": "dist/@nejcm/js-helpers.umd.js",
+  "module": "dist/@nejcm/js-helpers.esm.js",
+  "types": "types/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -29,7 +29,8 @@
     "library"
   ],
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
@@ -43,7 +44,7 @@
     "test:cov": "jest --coverage --colors && jest-coverage-badges",
     "test:build": "jest --coverage --colors --silent && jest-coverage-badges",
     "test:watch": "jest --watch",
-    "build": "npm run clean && rollup -c",
+    "build": "npm run clean && kcd-scripts build --bundle --no-clean --size-snapshot",
     "validate": "npm run format && npm run lint && npm run test:build",
     "setup": "npm install && npm run validate",
     "semantic-release": "semantic-release"
@@ -56,8 +57,8 @@
   "peerDependencies": {},
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "object-to-formdata": "^3.0.6",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "object-to-formdata": "^3.0.6"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",
@@ -86,6 +87,7 @@
     "@types/jest": "^25.2.1",
     "@types/react": "16.9.34",
     "babel-loader": "^8.1.0",
+    "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "babel-plugin-no-side-effect-class-properties": "0.0.7",
     "babel-plugin-transform-async-to-promises": "^0.8.15",
@@ -108,11 +110,12 @@
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
-    "jest": "25.3.0",
+    "jest": "25.4.0",
     "jest-coverage-badges": "^1.1.2",
     "jest-environment-jsdom-fourteen": "1.0.1",
-    "jest-resolve": "25.3.0",
+    "jest-resolve": "25.4.0",
     "jest-watch-typeahead": "0.5.0",
+    "kcd-scripts": "^5.10.0",
     "lint-staged": "10.1.6",
     "node-sass": "^4.13.1",
     "postcss": "^7.0.27",
@@ -125,10 +128,6 @@
     "rollup": "2.6.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-filesize": "^7.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-uglify": "^6.0.4",
     "sass-loader": "^8.0.2",
     "semantic-release": "17.0.6",
     "serve": "^11.3.0",

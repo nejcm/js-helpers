@@ -1,18 +1,6 @@
-# JS utils
-<blockquote>Javascript utilities and helper functions</blockquote>
+# 🛠️ JS helpers
+<blockquote>Javascript utilities and helper functions.</blockquote>
 <br />
-
-<a href="https://www.joypixels.com/profiles/emoji/hammer-and-wrench">
-  <img
-    height="128"
-    width="128"
-    alt="utils"
-    src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1f6e0.png?192038471"
-  />
-</a>
-<br />
-<br />
-
 
 <!-- prettier-ignore-start -->
 [![NPM][npm-badge]][npm-link] 

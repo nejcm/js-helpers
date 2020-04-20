@@ -1,0 +1,60 @@
+{
+  "preact\\dist\\@nejcm\\js-helpers.cjs.js": {
+    "bundled": 14290,
+    "minified": 6354,
+    "gzipped": 2130
+  },
+  "dist\\@nejcm\\js-helpers.cjs.js": {
+    "bundled": 14278,
+    "minified": 6342,
+    "gzipped": 2126
+  },
+  "preact\\dist\\@nejcm\\js-helpers.esm.js": {
+    "bundled": 13343,
+    "minified": 5542,
+    "gzipped": 1942,
+    "treeshaked": {
+      "rollup": {
+        "code": 236,
+        "import_statements": 236
+      },
+      "webpack": {
+        "code": 1385
+      }
+    }
+  },
+  "dist\\@nejcm\\js-helpers.esm.js": {
+    "bundled": 13327,
+    "minified": 5530,
+    "gzipped": 1940,
+    "treeshaked": {
+      "rollup": {
+        "code": 224,
+        "import_statements": 224
+      },
+      "webpack": {
+        "code": 1373
+      }
+    }
+  },
+  "dist\\@nejcm\\js-helpers.umd.js": {
+    "bundled": 51053,
+    "minified": 13574,
+    "gzipped": 4726
+  },
+  "preact\\dist\\@nejcm\\js-helpers.umd.min.js": {
+    "bundled": 511283,
+    "minified": 79762,
+    "gzipped": 27208
+  },
+  "preact\\dist\\@nejcm\\js-helpers.umd.js": {
+    "bundled": 511283,
+    "minified": 79762,
+    "gzipped": 27208
+  },
+  "dist\\@nejcm\\js-helpers.umd.min.js": {
+    "bundled": 51053,
+    "minified": 13574,
+    "gzipped": 4726
+  }
+}
