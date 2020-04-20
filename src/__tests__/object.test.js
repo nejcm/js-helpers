@@ -15,6 +15,32 @@ describe('object', () => {
     expect(helpers.filterEmpty(obj)).toEqual({k1: 1});
   });
 
+  it('should return object value', () => {
+    const obj = {
+      level1: {
+        level2: {
+          value: 1,
+        },
+      },
+    };
+    expect(helpers.get(obj, 'level1.level2.value')).toEqual(
+      obj.level1.level2.value,
+    );
+  });
+
+  it('should return object value from array', () => {
+    const obj = {
+      level1: {
+        level2: {
+          value: 1,
+        },
+      },
+    };
+    expect(helpers.get(obj, ['level1', 'level2', 'value'])).toEqual(
+      obj.level1.level2.value,
+    );
+  });
+
   it('should return object values from array of keys', () => {
     const obj = {
       level1: {

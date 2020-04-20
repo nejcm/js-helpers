@@ -1,7 +1,6 @@
 module.exports = {
   presets: ['@babel/preset-env', '@babel/preset-react', '@babel/typescript'],
   plugins: [
-    'lodash',
     ['@babel/plugin-transform-runtime'],
     ['babel-plugin-transform-react-remove-prop-types', {mode: 'unsafe-wrap'}],
     'no-side-effect-class-properties',

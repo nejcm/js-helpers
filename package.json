@@ -57,7 +57,6 @@
   "peerDependencies": {},
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "lodash": "^4.17.15",
     "object-to-formdata": "^3.0.6"
   },
   "devDependencies": {
@@ -87,7 +86,6 @@
     "@types/jest": "^25.2.1",
     "@types/react": "16.9.34",
     "babel-loader": "^8.1.0",
-    "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "babel-plugin-no-side-effect-class-properties": "0.0.7",
     "babel-plugin-transform-async-to-promises": "^0.8.15",

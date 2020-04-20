@@ -1,5 +1,3 @@
-import get from 'lodash/get';
-
 /**
  * Filter out undefined or empty values
  * @param {Object} obj Object to filter
@@ -15,17 +13,33 @@ export const filterEmpty = (obj) => {
 };
 
 /**
+ *  Get object value
+ *
+ * @param {Object} obj - object
+ * @param {String|Array} path - array or string of parameters
+ * @param {Any} fallback - fallback if undefined
+ * @returns {Any} Object value
+ */
+export const get = (obj, path, fallback = undefined) => {
+  if (!obj) {
+    return fallback;
+  }
+  const pathArr = typeof path === 'string' ? path.split('.') : path;
+  const value = pathArr.reduce(
+    (xs, x) => (xs && xs[x] !== null ? xs[x] : null),
+    obj,
+  );
+  return value !== undefined ? value : fallback;
+};
+
+/**
  * Get multiple object values
  *
  * @param {Object} o - object
  * @param {Array} arr - array of keys
  * @returns {Array|null} The array of values.
  */
-export const getMultiple = (o, arr = []) => {
-  return arr.map((key) => {
-    return get(o, key);
-  });
-};
+export const getMultiple = (o, arr = []) => arr.map((key) => get(o, key));
 
 /**
  *  Flatten object
@@ -50,6 +64,4 @@ export const flatten = (obj, prefix = '') =>
  * @param {Object} data - data
  * @returns {String} Json value
  */
-export const toJson = (data) => {
-  return data ? JSON.stringify(data) : undefined;
-};
+export const toJson = (data) => (data ? JSON.stringify(data) : undefined);
