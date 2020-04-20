@@ -20,4 +20,5 @@ export {
   replaceHistoryState,
   serialize,
 } from './lib/url';
+export {isDefined} from './lib/var';
 export {Enum};

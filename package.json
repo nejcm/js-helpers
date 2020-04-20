@@ -24,6 +24,9 @@
   },
   "keywords": [
     "js",
+    "helpers",
+    "utility",
+    "functions",
     "es6",
     "react",
     "library"
@@ -132,5 +135,11 @@
     "start-server-and-test": "^1.11.0",
     "style-loader": "^1.1.4",
     "typescript": "^3.8.3"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 11",
+    "safari >= 7"
+  ]
 }
