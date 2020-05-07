@@ -20,9 +20,9 @@ export const filterEmpty = (obj) => {
  * @param {Any} fallback - fallback if undefined
  * @returns {Any} Object value
  */
-export const get = (obj, path, fallback = undefined) => {
+export const get = (obj, path, fallback) => {
   if (!obj) {
-    return fallback;
+    return fallback || obj;
   }
   const pathArr = typeof path === 'string' ? path.split('.') : path;
   const value = pathArr.reduce(

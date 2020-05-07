@@ -15,6 +15,11 @@ describe('object', () => {
     expect(helpers.filterEmpty(obj)).toEqual({k1: 1});
   });
 
+  it('should return null for null object', () => {
+    const obj = null;
+    expect(helpers.get(obj, 'level1.level2.value')).toEqual(null);
+  });
+
   it('should return object value', () => {
     const obj = {
       level1: {
