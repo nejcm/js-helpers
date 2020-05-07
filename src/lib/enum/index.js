@@ -12,8 +12,8 @@ class Enum {
     return this.hasOwnProperty(key);
   };
 
-  getValue = (key, ...rest) => {
-    return get(this, [key, ...rest]);
+  getValue = (keys, fallback) => {
+    return get(this, keys, fallback);
   };
 
   all = (...exclude) => {
@@ -47,13 +47,16 @@ class Enum {
     };
   };
 
-  getProperty = (value, property, fallback) => {
-    return this.getValue('properties', value, property) || fallback;
+  getProperty = (value, propKeys, fallback) => {
+    const keys = Array.isArray(propKeys)
+      ? ['properties', value, ...propKeys]
+      : `properties.${value}.${propKeys}`;
+    return this.getValue(keys, fallback);
   };
 
-  getPropertyByKey = (key, property, fallback) => {
+  getPropertyByKey = (key, propKeys, fallback) => {
     const value = this.getValue(key);
-    return this.getProperty(value, property, fallback);
+    return this.getProperty(value, propKeys, fallback);
   };
 }
 

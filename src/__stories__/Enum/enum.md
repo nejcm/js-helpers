@@ -24,20 +24,45 @@ const OrderStatus = {
       value: -1,
       color: 'red',
       name: 'Declined state',
+      nestedKey: {
+        order: 0,
+      },
     },
-    0: {key: 'canceled', value: 0, color: 'red', name: 'Canceled state'},
-    1: {key: 'draft', value: 1, color: 'blue', name: 'Draft state'},
+    0: {
+      key: 'canceled',
+      value: 0,
+      color: 'red',
+      name: 'Canceled state',
+      nestedKey: {
+        order: 1,
+      },
+    },
+    1: {
+      key: 'draft',
+      value: 1,
+      color: 'blue',
+      name: 'Draft state',
+      nestedKey: {
+        order: 2,
+      },
+    },
     2: {
       key: 'pending',
       value: 2,
       color: 'orange',
       name: 'Pending state',
+      nestedKey: {
+        order: 3,
+      },
     },
     3: {
       key: 'completed',
       value: 2,
       color: 'green',
       name: 'Completed state',
+      nestedKey: {
+        order: 4,
+      },
     },
   },
 };
@@ -93,6 +118,20 @@ const color = statusEnum.getProperty(OrderStatus.CANCELED, 'color'); // 'red'
 
 ```js
 const color2 = statusEnum.getProperty(OrderStatus.CANCELED, 'color_', 'pink')  // 'pink'
+```
+<br />
+
+#### Get nested property with fallback
+
+```js
+const nestedValue = statusEnum.getProperty(OrderStatus.COMPLETED, 'nestedKey.order', 'Fallback')  // 4
+```
+<br />
+
+#### Get nested property by array
+
+```js
+const nestedValueByArray = statusEnum.getProperty(OrderStatus.DECLINED, ['nestedKey', 'order'], 'Fallback')  // 0
 ```
 <br />
 
