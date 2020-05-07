@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/nejcm/js-helpers/compare/v2.1.0...v2.1.1) (2020-05-07)
+
+
+### Bug Fixes
+
+* fixed enum getProperty method for nested values ([902aaab](https://github.com/nejcm/js-helpers/commit/902aaab584ffc69cf08c0f423500e18e143f55d0))
+
 # [2.1.0](https://github.com/nejcm/js-helpers/compare/v2.0.4...v2.1.0) (2020-04-20)
 
 
