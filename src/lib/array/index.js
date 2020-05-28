@@ -53,7 +53,7 @@ export const findReverse = (array, predicate) => {
   }
   isArray(array);
   const index = findIndexReverse(array, predicate);
-  return index ? array[index] : index;
+  return index > -1 ? array[index] : index;
 };
 
 /**
