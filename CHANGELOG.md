@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/nejcm/js-helpers/compare/v2.1.1...v2.1.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* fixed bug in array helper ([4784540](https://github.com/nejcm/js-helpers/commit/47845405ce41a7a8e3bcf2563369abd976d80c74))
+
 ## [2.1.1](https://github.com/nejcm/js-helpers/compare/v2.1.0...v2.1.1) (2020-05-07)
 
 
