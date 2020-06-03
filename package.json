@@ -59,8 +59,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@babel/runtime": "^7.9.2",
-    "object-to-formdata": "^3.0.6"
+    "@babel/runtime": "^7.9.2"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",

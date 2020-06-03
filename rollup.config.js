@@ -14,9 +14,6 @@ config.plugins[babelPluginIndex] = babel({
 });
 config.plugins[cjsPluginIndex] = commonjs({
   include: 'node_modules/**',
-  namedExports: {
-    'object-to-formdata': ['objectToFormdata'],
-  },
 });
 
 module.exports = config;

@@ -1,5 +1,4 @@
 import Enum from './lib/enum';
-export {objectToFormData} from 'object-to-formdata';
 export {
   containsAll,
   containsAny,
