@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/nejcm/js-helpers/compare/v2.1.2...v3.0.0) (2020-06-03)
+
+
+### Features
+
+* removed object-to-formdata lib ([72c9191](https://github.com/nejcm/js-helpers/commit/72c91918c0f399553dbb22602af65fb71e3187c1))
+
+
+### BREAKING CHANGES
+
+* The object-to-formdata function has been removed
+
 ## [2.1.2](https://github.com/nejcm/js-helpers/compare/v2.1.1...v2.1.2) (2020-05-28)
 
 
