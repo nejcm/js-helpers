@@ -1,3 +1,20 @@
+# [4.0.0](https://github.com/nejcm/js-helpers/compare/v3.0.0...v4.0.0) (2020-06-06)
+
+
+### Bug Fixes
+
+* fixed prettier ([9e5489e](https://github.com/nejcm/js-helpers/commit/9e5489e5f3d39f1f07da76d3368ea186a450e8ee))
+
+
+### Code Refactoring
+
+* refactored package to typescript, ([26b20e4](https://github.com/nejcm/js-helpers/commit/26b20e426dd1484c71fa1d5620882f7de1d8deec))
+
+
+### BREAKING CHANGES
+
+* refactored Enum from class inheritance to prototypal inheritance, removed hasValue method
+
 # [3.0.0](https://github.com/nejcm/js-helpers/compare/v2.1.2...v3.0.0) (2020-06-03)
 
 
