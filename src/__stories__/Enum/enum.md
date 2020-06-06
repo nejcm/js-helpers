@@ -1,15 +1,15 @@
 
-# enum
+# enumerable
 
 <p>
-  Convert object to enum class.
+  Convert object to enum object.
 </p>
 
 ### Usage
 
 ```js
 
-import {Enum} from '@nejcm/js-helpers';
+import {enumerable} from '@nejcm/js-helpers';
 
 const OrderStatus = {
   DECLINED: -1,
@@ -67,13 +67,9 @@ const OrderStatus = {
   },
 };
 
-```
-<br />
+// Create enum
+const statusEnum = enumerable(OrderStatus);
 
-#### Create enum
-
-```js
-const statusEnum = new Enum(OrderStatus);
 ```
 <br />
 
@@ -124,14 +120,15 @@ const color2 = statusEnum.getProperty(OrderStatus.CANCELED, 'color_', 'pink')  /
 #### Get nested property with fallback
 
 ```js
-const nestedValue = statusEnum.getProperty(OrderStatus.COMPLETED, 'nestedKey.order', 'Fallback')  // 4
+// 3 = OrderStatus.COMPLETED
+const nestedValue = statusEnum.getProperty(3, 'nestedKey.order', 'Fallback')  // 4
 ```
 <br />
 
 #### Get nested property by array
 
 ```js
-const nestedValueByArray = statusEnum.getProperty(OrderStatus.DECLINED, ['nestedKey', 'order'], 'Fallback')  // 0
+const nestedValueByArray = statusEnum.getProperty(OrderStatus.DECLINED, ['nestedKey', 'order'])  // 0
 ```
 <br />
 
