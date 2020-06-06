@@ -8,3 +8,5 @@ coverage/*
 *.d.ts
 *.docz
 serviceWorker.js
+**/__stories__/*
+rollup.*

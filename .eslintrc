@@ -1,16 +1,30 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "react-app", "kentcdodds"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "kentcdodds",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "env": {
     "browser": true,
     "es6": true,
     "jest": true
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".md"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
     }
   },
   "rules": {

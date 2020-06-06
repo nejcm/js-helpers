@@ -11,9 +11,12 @@ const cjsPluginIndex = config.plugins.findIndex(
 
 config.plugins[babelPluginIndex] = babel({
   runtimeHelpers: true,
+  extensions: ['.js', '.jsx', '.ts', '.tsx'],
 });
 config.plugins[cjsPluginIndex] = commonjs({
   include: 'node_modules/**',
+  exclude: ['**/*.story.js'],
+  namedExports: {},
 });
 
 module.exports = config;
