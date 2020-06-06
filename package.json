@@ -39,7 +39,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook-static",
     "storybook:deploy": "npm run storybook:build && gh-pages -d .storybook-static",
-    "format": "prettier ./src/**/*.js --write",
+    "format": "prettier ./src/**/* --write",
     "clean": "rimraf dist coverage .storybook-static",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
