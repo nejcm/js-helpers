@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/nejcm/js-helpers/compare/v4.0.0...v4.0.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* fixed missing dependency ([921c6a8](https://github.com/nejcm/js-helpers/commit/921c6a86bd78131a35b860481e347dccc57aeeb0))
+
 # [4.0.0](https://github.com/nejcm/js-helpers/compare/v3.0.0...v4.0.0) (2020-06-06)
 
 
