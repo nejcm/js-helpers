@@ -114,7 +114,15 @@ describe('array', () => {
 
   it('should return same value for null or undefined array from groupBy', () => {
     const array = null;
-    expect(groupBy(array, 'group')).toEqual(array);
+    const result1 = null;
+    expect(groupBy(array, 'group')).toEqual(result1);
+
+    const array2 = [1, 2, 1, 3];
+    const result2 = {'': array2};
+    expect(groupBy(array2, '')).toEqual(result2);
+    expect(groupBy(array2, (item) => (item ? null : undefined))).toEqual(
+      result2,
+    );
   });
 
   it('should return grouped array by value', () => {

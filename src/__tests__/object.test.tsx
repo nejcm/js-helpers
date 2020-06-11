@@ -26,11 +26,15 @@ describe('object', () => {
         level2: {
           value: 1,
         },
+        value: null,
+        value2: undefined,
       },
     };
     expect(helpers.get(obj, 'level1.level2.value')).toEqual(
       obj.level1.level2.value,
     );
+    expect(helpers.get(obj, 'level1.value')).toEqual(obj.level1.value);
+    expect(helpers.get(obj, 'level1.value2')).toEqual(obj.level1.value2);
   });
 
   it('should return object value from array', () => {

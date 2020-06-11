@@ -113,10 +113,11 @@ export const groupBy = <T>(
   }
   isArray(array);
   return array.reduce((result, item) => {
-    const key = (typeof criteria === 'function'
-      ? criteria(item)
-      : item[criteria]
-    ).toString();
+    const key =
+      (typeof criteria === 'function'
+        ? criteria(item)
+        : item[criteria]
+      )?.toString() || '';
     (result[key] = result[key] || []).push(item);
     return result;
   }, {});
