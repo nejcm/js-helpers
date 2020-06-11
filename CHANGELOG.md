@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/nejcm/js-helpers/compare/v4.0.1...v4.0.2) (2020-06-11)
+
+
+### Bug Fixes
+
+* fixed bug in array groupBy method for null values ([e2ba478](https://github.com/nejcm/js-helpers/commit/e2ba4784370dbe7a7f51d51b2c916807c6eed6e4))
+
 ## [4.0.1](https://github.com/nejcm/js-helpers/compare/v4.0.0...v4.0.1) (2020-06-08)
 
 
