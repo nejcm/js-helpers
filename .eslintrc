@@ -2,7 +2,6 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
-    "react-app",
     "kentcdodds",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
@@ -12,7 +11,7 @@
     "es6": true,
     "jest": true
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
@@ -28,18 +27,14 @@
     }
   },
   "rules": {
-    "react/jsx-boolean-value": 0,
-    "react/prop-types": "off",
-    "react/no-adjacent-inline-elements": "off",
     "no-multiple-empty-lines": [
       "error",
       {
         "max": 3
       }
     ],
-    "max-lines-per-function": ["error", 500],
     "complexity": ["error", 15],
-    "valid-jsdoc": ["warn", {"requireReturn": false}],
+    "valid-jsdoc": ["warn"],
     "no-bitwise": "off",
     "consistent-return": "off",
     "no-negated-condition": "off",
@@ -51,10 +46,6 @@
     "no-unused-vars": "error",
     "eqeqeq": "off",
     "import/no-useless-path-segments": "off",
-    "max-lines": "off",
-    "no-eq-null": "off",
-    "react/jsx-indent": "off",
-    "jsx-a11y/label-has-for": "off",
-    "jsx-a11y/label-has-associated-control": "off"
+    "no-eq-null": "off"
   }
 }
