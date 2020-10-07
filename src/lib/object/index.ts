@@ -28,9 +28,7 @@ export const get = (
   path: string | string[],
   fallback?: unknown,
 ): unknown => {
-  if (!obj) {
-    return fallback || obj;
-  }
+  if (!obj) return fallback || obj;
   const pathArr = typeof path === 'string' ? path.split('.') : path;
   const value = pathArr.reduce(
     (xs, x) => (xs && xs[x] !== null ? xs[x] : null),

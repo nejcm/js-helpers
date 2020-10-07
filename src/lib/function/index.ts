@@ -21,12 +21,9 @@ export const runFunction = (func: unknown, ...args: unknown[]): unknown => {
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const curry = (func: Function): Function => {
   return function curried(...args: unknown[]) {
-    if (args.length >= func.length) {
-      return func(...args);
-    } else {
-      return (...argsLeft: unknown[]) => {
-        return curried(...args, ...argsLeft);
-      };
-    }
+    if (args.length >= func.length) return func(...args);
+    return (...argsLeft: unknown[]) => {
+      return curried(...args, ...argsLeft);
+    };
   };
 };
