@@ -136,7 +136,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "sass-loader": "^9.0.3",
-    "semantic-release": "17.1.1",
+    "semantic-release": "^17.2.3",
     "serve": "^11.3.2",
     "start-server-and-test": "^1.11.3",
     "style-loader": "^1.2.1",
